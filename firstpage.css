@@ -1,0 +1,158 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: radial-gradient(at center,  rgb(227, 0, 0) , rgb(29, 28, 28) );
+    }
+
+
+    .header {
+      height: 40px;
+      width: 60%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      position: fixed;
+      top: 20px;
+      left: 30px;
+      right: 30px;
+      margin: auto;
+      z-index: 100;
+      
+
+      background-color: rgb(183, 138, 138);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0, 0, 0.1);
+      opacity: 0.7;
+    }
+
+
+       
+
+    .left-icons {
+      font-size: 30px;
+      color: rgb(110, 110, 110);
+      top: 20px;
+      left: 200px;
+      z-index: 100;
+      cursor: pointer;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .right-icons {
+       font-size: 30px;
+       color: rgb(110, 110, 110);
+      top: 35px;
+      right: 200px;
+      z-index: 100;
+      cursor: pointer;
+    }
+
+    a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    .admin-content {
+      max-width: 600px;
+    }
+
+    .hello {
+      font-weight: 200;
+      color: rgb(184, 182, 182);
+    }
+
+    .name {
+      font-size: 38px;
+      font-weight: 400px;
+      margin-bottom: 16px;
+      color: rgb(0, 0, 0);
+    }
+
+    .intro {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 32px;
+      color: black;
+    }
+
+    .works  {
+      display: inline-block;
+      padding: 12px 24px;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 600;
+      border: 2px solid rgb(17, 17, 17);
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+    }
+
+    .works:hover {
+      background-color: rgb(17, 17, 17);
+      color: rgb(255, 255, 255);
+      transform: translateY(-2px);
+    }
+
+    .works:active {
+      background-color: gray;
+      color: black;
+    }
+
+
+    .admin {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .admin-image {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .admin {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+      }
+
+      .admin-content {
+        max-width: 50%;
+      }
+
+      .admin-image {
+        max-width: 400px;
+        order: 2;
+      }
+    }
