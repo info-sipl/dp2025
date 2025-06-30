@@ -46,10 +46,12 @@
 .gallery-item:hover {
   opacity: 1;
   transform: translateY(-2px);
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="16" fill="rgba(180,180,255,0.35)"/></svg>') 24 24, pointer;
+  cursor: grab;
 }
 
-
+.gallery-item:active {
+  cursor: grabbing;
+}
 
 
 .gallery-content {
