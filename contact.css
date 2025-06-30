@@ -1,8 +1,8 @@
-.work-with-me-section {
+.contact-section {
   text-align: center;
 }
 
-.work-with-me-section h2 {
+.contact-section h2 {
   font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
@@ -10,7 +10,7 @@
   margin-bottom: 10px;
 }
 
-.work-with-me-section .intro-text {
+.contact-section .intro-text {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
@@ -92,5 +92,10 @@
   transform: translateY(-2px);
 }
 
-
-
+.footer a {
+  text-align: center;
+  padding: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: rgb(13, 12, 12);
+}
