@@ -1,81 +1,92 @@
-.my-gallery-section {
+.clients-section {
   padding: 80px 40px;
   text-align: center;
 }
 
-
-.my-gallery-section h2 {
+.clients-section h2 {
   font-size: 36px;
+  color: rgb(34, 34, 34);
   margin-bottom: 10px;
-  color: rgb(4, 4, 4);
 }
 
-.gallery-intro {
-  font-family: Roboto;
-  font-weight: 300;
+.testimonials-intro {
   font-size: 18px;
-  color:rgb(251, 178, 178);
+  color: rgb(251, 178, 178);
   margin-bottom: 40px;
 }
 
-a {
-  color: rgb(17, 17, 17);
-  text-decoration: none;
-}
-
-.work-gallery {
-  font-family: Roboto;
-  font-weight: 300;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  row-gap: 40px;
-  left: 100px;
-  right: 100px;
-}
-
-.gallery-item {
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  min-height: 250px;
-  background-size: cover;
-  background-position: center;
+.testimonials-list {
   display: flex;
-  align-items: flex-end;
-  padding: 20px;
-  opacity: 0.7;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  transition: opacity 0.15s ;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.gallery-item:hover {
-  opacity: 1;
-  transform: translateY(-2px);
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="16" fill="rgba(180,180,255,0.35)"/></svg>') 24 24, pointer;
+.testimonial-card {
+  background-color: rgb(255, 220, 220);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-
-
-
-.gallery-content {
-  position: relative;
-  z-index: 2;
-  color: rgb(255, 255, 255);
+.testimonial-card:hover {
+  transform: translateY(-5px);
 }
 
-.gallery-content h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.gallery-content p {
-  font-size: 16px;
-}
-
-.description {
+.testimonial-card .quote {
   font-family: Roboto;
-  font-weight: 400;
-  margin-left: 20px;
-  color: black;
+  font-size: 16px;
+  color: rgb(31, 31, 31);
+  font-style: italic;
+  margin-bottom: 15px;
+  margin-top: 14px;
+  text-align: justify;
+}
+
+.client-profile {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.testimonial-card .author {
+  font-size: 16px;
+  color: rgb(17, 17, 17);
+  font-family: Roboto;
+  font-weight: 700;
+  position: relative;
+  left: 10px;
+}
+
+.testimonial-card .role {
+  text-align: left;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 300;
+  color: rgb(96, 96, 96);
+  position: relative;
+  bottom: 15px;
+  left: 45px;
+}
+
+.client-picture {
+        width: 36px;
+        border-radius: 50px;
+      }
+
+
+
+@media (min-width: 768px) {
+  .testimonials-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .testimonial-card {
+    width: 300px;
+  }
 }
