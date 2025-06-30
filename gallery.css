@@ -3,6 +3,7 @@
   text-align: center;
 }
 
+
 .my-gallery-section h2 {
   font-size: 36px;
   margin-bottom: 10px;
@@ -15,6 +16,11 @@
   font-size: 18px;
   color:rgb(251, 178, 178);
   margin-bottom: 40px;
+}
+
+a {
+  color: rgb(17, 17, 17);
+  text-decoration: none;
 }
 
 .work-gallery {
@@ -46,12 +52,10 @@
 .gallery-item:hover {
   opacity: 1;
   transform: translateY(-2px);
-  cursor: grab;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="16" fill="rgba(180,180,255,0.35)"/></svg>') 24 24, pointer;
 }
 
-.gallery-item:active {
-  cursor: grabbing;
-}
+
 
 
 .gallery-content {
