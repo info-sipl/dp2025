@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name – Portfolio</title>
-  <link rel="stylesheet" href="firstpage.css">
-  <link rel="stylesheet" href="services.css">
-  <link rel="stylesheet" href="gallery.css">
-  <link rel="stylesheet" href="clients.css">
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="style.css/clients.css">
+  <link rel="stylesheet" href="style.css/contact.css">
+  <link rel="stylesheet" href="style.css/firstpage.css">
+  <link rel="stylesheet" href="style.css/gallery.css">
+  <link rel="stylesheet" href="style.css/services.css">
+  <link rel="stylesheet" href="style.css/slidemenu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +21,19 @@
        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
        <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
-    <div class="right-icons">
-      <a href=""><i class="fa-solid fa-bars"></i></a>
-    </div>
+  <button id="menuToggle" aria-label="Open menu">☰</button>
+    <div id="slideMenu" class="slide-menu hidden">
+    <ul>
+      <li><a href="#firstpage">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
   </div>
 
+  <section id="firstpage" class="my-intro">
   <div class="container">
     <div class="admin">
       <div class="admin-content">
@@ -38,85 +47,93 @@
         <p class="intro">
           Introduction about the admin.
         </p>
-        <a href="#projects" class="works">View My Work →</a>
+        <a href="#gallery" class="works">View My Work →</a>
       </div>
       <img src="https://framerusercontent.com/images/mRr1COJwwPg1uFRMDdaNPuLzHU.png?scale-down-to=1024" alt="Portfolio Preview" class="admin-image" />
     </div>
   </div>
+</section>
 
   <section id="services" class="services-section">
-  <h2>My Services</h2>
+  <h2>Services</h2>
   <p class="services-intro">
     Check out all services below, then click "Get Started" button to proceed.
   </p>
 
   <div class="services-container">
-
-
   <div class="service-image">
-      <img id="service-img" src="https://media.easemytrip.com/media/Blog/India/637870903728666071/637870903728666071B4iTsT.jpg" alt="Service Preview">
-    </div>
-  
-  <div class="services-list">
-    <div class="service-card">
-      <h3>Web Design</h3>
+  <img id="service-img" src="https://media.easemytrip.com/media/Blog/India/637870903728666071/637870903728666071B4iTsT.jpg" alt="Service Preview">
+</div>
+
+<div class="services-list">
+    <div class="service-card" data-img="https://images.pexels.com/photos/751829/pexels-photo-751829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+      <h3><i class="fas fa-laptop-code" style="margin-right:10px;"></i> Web Design</h3>
       <p>Sleek, modern web designs that captivate and engage your audience.</p>
-      <button>Get Started →</button>
+      <a href="#contact">Get Started →</a>
     </div>
 
-    <div class="service-card">
-      <h3>Logo Design</h3>
+    <div class="service-card" data-img="https://www.kaytee.com/-/media/Project/OneWeb/Kaytee/US/learn-care/rabbit-liberty-training/how-to-liberty-train-your-rabbit.jpg">
+      <h3><i class="fas fa-pen-nib" style="margin-right:10px;"></i> Logo Design</h3>
       <p>Professional logos to define your brand identity.</p>
-      <button>Get Started →</button>
+      <a href="#contact">Get Started →</a>
     </div>
 
-    <div class="service-card">
-      <h3>Website Maintenance</h3>
+    <div class="service-card" data-img="https://nationalzoo.si.edu/sites/default/files/styles/max_1300x1300/public/animals/blackfootedferret-002.jpg?itok=TO-IH5j1">
+      <h3><i class="fas fa-tools" style="margin-right:10px;"></i> Website Maintenance</h3>
       <p>Keep your website updated, secure, and optimized.</p>
-      <button>Get Started →</button>
+      <a href="#contact">Get Started →</a>
     </div>
 
-    <div class="service-card">
-      <h3>Website Hosting</h3>
+    <div class="service-card" data-img="https://www.shutterstock.com/image-photo/shebear-bear-cubs-summer-forest-600nw-1217157787.jpg">
+     <h3><i class="fas fa-server" style="margin-right:10px;"></i> Website Hosting</h3>
       <p>Fast, reliable hosting solutions for your projects.</p>
-      <button>Get Started →</button>
+      <a href="#contact">Get Started →</a>
     </div>
   </div>
  </div>
 </section>
 
-<section id="my-gallery" class="my-gallery-section">
-  <h2>My Gallery</h2>
+<section id="gallery" class="my-gallery-section">
+  <h2>Gallery</h2>
   <p class="gallery-intro">
     I've been busy past few years, working on some of the best projects. Here's a Glimpse!
   </p>
 
   <div class="work-gallery">
+    <a href="work1.html" class="gallery-link">
     <div class="gallery-item" style="background-image: url('https://img.freepik.com/premium-photo/animal-africa-nature-sunset-safari-outdoors-mammal-wilderness-area-generated-by-artificial-intelligence_188544-65001.jpg');">
       <h3 class="title">Portfolio Website</h3>
       <p class="description">Personal website to showcase projects, skills, and contact info.</p>
     </div>
+    </a>
 
+
+    <a href="work2.html" class="gallery-link">
         <div class="gallery-item" style="background-image: url('https://t3.ftcdn.net/jpg/02/36/99/22/360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg');">
       <h3 class="title">Brand Identity</h3>
       <p class="description">Logo and brand guidelines designed for a startup client.</p>
     </div>
+  </a>
 
+  <a href="work3.html" class="gallery-link">
       <div class="gallery-item" style="background-image: url('https://rhin-blog-production.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/08/rhino-and-pink-flamingo-background-in-africa-ai-generative-AdobeStock_597294209.jpg');">
       <h3 class="title">E-Commerce Store</h3>
       <p class="description">Custom-built online store for a clothing brand using Shopify.</p>
     </div>
+  </a>
 
+
+  <a href="work4.html" class="gallery-link">
     <div class="gallery-item" style="background-image: url('https://cdn.prod.website-files.com/680a070c3b99253410dd3df5/680a070c3b99253410dd47d4_66d83e367cd5dcf2b51ed2e4_Wildlife%2520Thumbnail%25202.png');">
       <h3 class="title">Mobile App UI</h3>
       <p class="description">Clean and intuitive UI design for a food delivery mobile app.</p>
     </div>
-  </div>
-</section>
+  </a>
 
-<section id="testimonials" class="testimonials-section">
+
+<section id="clients" class="testimonials-section">
   <div class="container">
-    <h2>Happy Clients</h2>
+    <h2>Clients</h2>
     <p class="testimonials-intro">
       Here's what my clients have to say about working together.
     </p>
@@ -166,7 +183,7 @@
   </div>
 </section>
 
-<section id="work-with-me" class="work-with-me-section">
+<section id="contact" class="work-with-me-section">
   <div class="container">
     <h2>Work With Me</h2>
     <p class="intro-text">
@@ -197,7 +214,53 @@
 </section>
 
 
-  </div>
+
+  <script>
+  const menu = document.getElementById('slideMenu');
+  const toggle = document.getElementById('menuToggle');
+
+  toggle.addEventListener('click', function() {
+    if (menu.classList.contains('show')) {
+      menu.classList.remove('show');
+      menu.classList.add('hidden');
+    } else {
+      menu.classList.add('show');
+      menu.classList.remove('hidden');
+    }
+  });
+
+
+  menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('show');
+    menu.classList.add('hidden');
+  });
+});
+
+
+const serviceImg = document.getElementById('service-img');
+const defaultImg = serviceImg.src;
+const serviceCards = document.querySelectorAll('.service-card');
+
+serviceCards.forEach(card => {
+  card.addEventListener('mouseenter', function() {
+    const newImg = this.getAttribute('data-img');
+    if (newImg && serviceImg.src !== newImg) {
+      serviceImg.classList.add('fading');
+      setTimeout(() => {
+        serviceImg.src = newImg;
+        serviceImg.classList.remove('fading');
+      }, 400); 
+    }
+  });
+  card.addEventListener('mouseleave', function() {
+    serviceImg.classList.add('fading');
+    setTimeout(() => {
+      serviceImg.src = defaultImg;
+      serviceImg.classList.remove('fading');
+    }, 400);
+  });
+});
+</script>
 </body>
 </html>
-
