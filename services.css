@@ -41,6 +41,10 @@
 }
 
 .service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
   font-family: roboto;
   font-weight: 400px;
   background-color: rgb(255, 220, 220); 
@@ -56,38 +60,42 @@
 }
 
 .service-card:hover {
-  background-color: rgb(8, 4, 4);
+  background-color: rgba(53, 25, 25 , 0.8);
   color: white;
   transform: scale(1.05);
   opacity: 1;
 }
 
 
-
-.service-card button {
-  padding: 6px 10px;
-  margin-top: 6px;
-  cursor: pointer;
-  background-color: aliceblue;
-  border: 2px black;
+.service-card a {
+  align-self: flex-end;
+  margin-top: auto;
+  text-align: left;
+  padding: 8px 4px;
+  background-color: rgba(245, 245, 250, 0.8);
+  border: none;
   border-radius: 10px;
-  transition: background-color 0.15s,
-  color 0.15s;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
-.service-card button:active {
+.service-card a:active {
   background-color: rgb(186, 91, 91);
   color: rgb(250, 249, 249);
 }
 
 .service-image {
+  max-width: 700px;
+  width: 100%;
   display: flex;
-  justify-content: right;
-  align-items: right;
+  justify-content: center;
+  align-items: flex-start;
   position: absolute;
   right: 40px;
   max-height: 100%;
-  max-width: 100%;
 }
 
 .service-image img {
@@ -96,4 +104,34 @@
   transition: 0.3s ease;
 }
 
+#service-img {
+  transition: opacity 0.4s ease;
+}
+#service-img.fading {
+  opacity: 0;
+}
 
+#service-img {
+  width: 100%; 
+  max-width: 700px;
+  height: 450px;    
+  object-fit: cover; 
+  border-radius: 12px;
+  transition: opacity 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+#service-img.fading {
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-image, #service-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+}
