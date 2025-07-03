@@ -86,7 +86,7 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // Remove if you want it to animate every time it enters view
+          observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
