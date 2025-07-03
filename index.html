@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name – Portfolio</title>
-  <link rel="stylesheet" href="clients.css">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="firstpage.css">
-  <link rel="stylesheet" href="gallery.css">
-  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="style.css/clients.css">
+  <link rel="stylesheet" href="style.css/contact.css">
+  <link rel="stylesheet" href="style.css/firstpage.css">
+  <link rel="stylesheet" href="style.css/gallery.css">
+  <link rel="stylesheet" href="style.css/services.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -133,14 +133,17 @@
 <section id="clients" class="clients-section">
   <div class="container">
     <h2>Clients</h2>
-    <p class="testimonials-intro">
+    <div class="testimonials-intro">
       Here's what my clients have to say about working together.
-    </p>
-    <div class="testimonials-list">
-      <div class="testimonial-card">
+    </div>
+
+    <div class="testimonials-carousel">
+<button class="arrow left-arrow">&#8592;</button>
+  <div class="carousel-viewport">
+    <div class="testimonials-wrapper">
+<div class="testimonial-card active">
         <div class="client-profile"> 
             <img class="client-picture"  src="channel-1.jpeg">
-
         <p class="author"> 
           Nitika Gazmair.
         </p>
@@ -148,39 +151,76 @@
         <p class="role">
           CEO-ABC Co.
         </p>
-        
         <p class="quote">“They transformed my vision into reality! The process was smooth and the result exceeded my expectations.”</p>
+        <div class="stars">★★★★★</div>
       </div>
 
-      <div class="testimonial-card">
+
+      <div class="testimonial-card ">
         <div class="client-profile"> 
             <img class="client-picture"  src="channel-1.jpeg">
-        <p class="author">
+        <p class="author"> 
           Ariel Zavitz.
         </p>
         </div>
         <p class="role">
           CEO-ABC Co.
         </p>
+        
         <p class="quote">“Professional, creative, and incredibly efficient. I couldn't be happier with the website!”</p>
+        <div class="stars">★★★★★</div>
       </div>
-      
-      <div class="testimonial-card">
-         <div class="client-profile"> 
+
+      <div class="testimonial-card ">
+        <div class="client-profile"> 
             <img class="client-picture"  src="channel-1.jpeg">
-        <p class="author">
+
+        <p class="author"> 
           Loris Satromz.
         </p>
         </div>
         <p class="role">
           CEO-ABC Co.
         </p>
-
+        
         <p class="quote">“The attention to detail and commitment to excellence were truly outstanding.”</p>
+        <div class="stars">★★★★★</div>
       </div>
-    </div>
+
+      <div class="testimonial-card ">
+        <div class="client-profile"> 
+            <img class="client-picture"  src="channel-1.jpeg">
+        <p class="author"> 
+          Birshika Gazmair.
+        </p>
+        </div>
+        <p class="role">
+          CEO-ABC Co.
+        </p>
+        <p class="quote">“They transformed my vision into reality! The process was smooth and the result exceeded my expectations.”</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimonial-card ">
+        <div class="client-profile"> 
+            <img class="client-picture"  src="channel-1.jpeg">
+        <p class="author"> 
+          Miko Baby.
+        </p>
+        </div>
+        <p class="role">
+          CEO-ABC Co.
+        </p>
+        
+        <p class="quote">“Professional, creative, and incredibly efficient. I couldn't be happier with the website!”</p>
+        <div class="stars">★★★★★</div>
+      </div>
+</div>
   </div>
+      <button class="arrow right-arrow">&#8594;</button>
+    </div>
 </section>
+
 
 <section id="contact" class="contact-section">
   <div class="container">
@@ -220,31 +260,7 @@
     <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin</a>
   </div>
 
-  <script>
-    const serviceImg = document.getElementById('service-img');
-    const defaultImg = serviceImg.src;
-    const serviceCards = document.querySelectorAll('.service-card');
-
-    serviceCards.forEach(card => {
-      card.addEventListener('mouseenter', function() {
-        const newImg = this.getAttribute('data-img');
-        if (newImg && serviceImg.src !== newImg) {
-          serviceImg.classList.add('fading');
-          setTimeout(() => {
-            serviceImg.src = newImg;
-            serviceImg.classList.remove('fading');
-          }, 400); 
-        }
-      });
-        card.addEventListener('mouseleave', function() {
-          serviceImg.classList.add('fading');
-          setTimeout(() => {
-            serviceImg.src = defaultImg;
-            serviceImg.classList.remove('fading');
-          }, 400);
-        });
-      });
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
 
