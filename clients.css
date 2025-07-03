@@ -10,6 +10,8 @@
 }
 
 .testimonials-intro {
+  font-family: Roboto;
+  font-weight: 200;
   font-size: 18px;
   color: rgb(251, 178, 178);
   margin-bottom: 40px;
