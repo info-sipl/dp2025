@@ -14,7 +14,7 @@
   font-size: 18px;
   font-weight: 300;
   font-style: oblique;
-  color: rgb(251, 178, 178);
+  color: rgb(69, 69, 69);
   margin-bottom: 40px;
 }
 
@@ -61,7 +61,7 @@
   font-size: 16px;
   border: none;
   border-radius: 8px;
-  background-color: rgb(255, 162, 186);
+  background-color: rgb(255, 255, 255);
   color: rgb(5, 4, 4);
   opacity: 0.6;
   box-sizing: border-box;
@@ -70,13 +70,13 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: rgb(255, 210, 235);
-  background-color: rgb(254, 230, 241);
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(186, 186, 186);
 }
 
 .submit-button {
   display: inline-block;
-  background-color: rgb(254, 153, 185);
+  background-color: rgba(21, 21, 21, 0.672);
   color: rgb(250, 250, 250);
   padding: 14px 28px;
   border: none;
@@ -87,7 +87,7 @@
 }
 
 .submit-button:hover {
-  background-color: rgb(180, 24, 86);
+  background-color: rgb(0, 0, 0);
   transform: translateY(-2px);
 }
 
