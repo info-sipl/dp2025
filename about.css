@@ -1,0 +1,36 @@
+.about {
+  padding: 80px 10%;
+  background-color: white;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-text{
+  max-width: 600px;
+  text-align: left;
+}
+
+h1 {
+  font-family: Merriweather, serif;
+  font-size: 50px;
+   color: rgb(11, 11, 11);
+  margin-bottom: 5px;
+}
+
+.about-text p {
+  max-width: 600px;
+  color: rgb(35, 35, 35);
+  font-size: 20px;
+}
