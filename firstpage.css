@@ -12,7 +12,7 @@ html {
       margin: 0;
       padding: 0;
       min-height: 100vh;
-      background: radial-gradient(at center,  rgb(227, 0, 0) , rgb(29, 28, 28) );
+      background: radial-gradient(at center,  rgb(255, 255, 255) , rgb(29, 28, 28) );
     }
 
 
@@ -34,7 +34,7 @@ html {
       z-index: 100;
       
 
-      background-color: rgb(183, 138, 138);
+      background-color: rgba(16, 15, 15, 0.823);
       border-radius: 8px;
       box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
       opacity: 0.7;
@@ -70,7 +70,7 @@ html {
 
 
     .menu a:hover {
-      color: rgb(36, 14, 14);
+      color: rgb(92, 92, 92);
     }
 
     .works  {
@@ -98,7 +98,7 @@ html {
     }
 
     .name {
-      font-size: 38px;
+      font-size: 30px;
       font-weight: 400px;
       margin-bottom: 16px;
       color: rgb(0, 0, 0);
@@ -166,3 +166,4 @@ html {
         order: 2;
       }
     }
+
