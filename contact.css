@@ -91,10 +91,11 @@
   transform: translateY(-2px);
 }
 
-.footer a {
+.footer {
   text-align: center;
   padding: 20px;
   font-family: Roboto;
   font-size: 14px;
   color: rgb(13, 12, 12);
 }
+
