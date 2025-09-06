@@ -16,10 +16,10 @@
 }
 
 .avatar {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 450px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 30px;
   box-shadow: 0 2px 16px rgba(34,34,59,0.10);
   background: rgb(255, 255, 255);
 }
@@ -58,4 +58,5 @@ h1 {
     height: 140px;
   }
 }
+
 
